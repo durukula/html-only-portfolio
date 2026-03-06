@@ -1,112 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Naime Duru Kula</title>
-    <link rel="icon" type="image/png" href="images/favicon.png">
-</head>
-<body>
-    <header>
-        <table>
-            <tr>
-                <td>
-                    <h2>Naime Duru Kula</h2>
-                </td>
-            </tr>
-        </table>
-    </header>
-
-    <!-- NAV -->
-    <nav>
-        <table>
-            <tr>
-                <td>
-                    <b>
-                        <a href="home.html">Home</a>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        <a href="skills.html">Skills</a>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        <a href="projects.html">Projects</a>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        <a href="experience.html">Experience</a>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        <a href="contact.html">Contact</a>
-                    </b>
-                </td>
-            </tr>
-        </table>
-    </nav>
-
-    <hr>
-
+    <link rel="icon" type="image/png" href="images/favicon.png" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-[#f0ede5] text-[#161317]">
     <main>
+      <section class="min-h-[88vh] md:min-h-[90vh] flex flex-col">
+        <header class="px-4 py-6">
+          <nav>
+            <ul class="flex flex-wrap items-center justify-center gap-6 text-[13px] font-semibold text-[#161317]">
+              <li><a href="home.html" class="hover:text-[#161317]">Home</a></li>
+              <li><a href="skills.html" class="hover:text-[#161317]">Skills</a></li>
+              <li><a href="projects.html" class="hover:text-[#161317]">Projects</a></li>
+              <li><a href="experience.html" class="hover:text-[#161317]">Experience</a></li>
+              <li><a href="contact.html" class="hover:text-[#161317]">Contact</a></li>
+            </ul>
+          </nav>
+        </header>
 
-        <!-- ABOUT ME -->
-        <section>
-            <h2>About Me</h2>
-            <table>
-                <tr>
-                    <td>
-                        <p></p>I am a Computer Engineering student passionate about web development and artificial intelligence.</p>
-                        <p>I enjoy creating clean, user-focused applications and continuously improving my technical and problem-solving skills.</p>
-                        <p>I can communicate in English and I am currently actively learning Spanish.</p>
-                        <p>I also focus on using AI tools efficiently and effectively in my workflow, and I continuously work on improving my ability to leverage AI in the right way.</p>
-                    </td>
-                    <td>
-                        <img src="images/profile.jpeg" alt="Naime Duru Kula" width="200" height="200">
-                    </td>
-                </tr>
-                <tr>
-                    <td colspan="2">
-                        My current goal is to have a stable remote job that allows me to earn while also traveling the world.<br>
-                        If things go well, I would love to spend some time living in Southeast Asia and experiencing different cultures while continuing my professional growth.
-                    </td>
-                </tr>
-            </table>
-            <hr>
-        </section>
+        <div class="flex-1 px-4 pb-10 sm:px-8 sm:pb-12 lg:px-14 lg:pb-14 flex items-end">
+          <div class="w-full grid grid-cols-1 md:grid-cols-[1fr_360px] lg:grid-cols-[1fr_380px] gap-8 md:gap-10 items-end">
+            <div class="text-center sm:text-left">
+              <h1 class="text-[46px] leading-[0.95] font-extrabold tracking-tight whitespace-nowrap sm:text-[74px] lg:text-[96px]">
+                <span class="sm:hidden">Naime Duru Kula</span>
+                <span class="hidden sm:inline">Naime Duru</span>
+              </h1>
+              <h2 class="hidden sm:block text-[56px] leading-[0.95] font-extrabold tracking-tight sm:text-[74px] lg:text-[96px]">Kula</h2>
+              <p class="mt-3 text-xl font-medium text-[#161317] sm:text-2xl">Computer Engineering Student</p>
+            </div>
 
-        <!-- EDUCATİON -->
-        <section>
-            <h2>Education</h2>
-            <table width="100%">
-                <tr>
-                    <td>
-                        <article>
-                            <h3>B.Sc. in Computer Engineering</h3>
-                            <p><b>Yaşar University</b></p>
-                            <p>2022 – Present (Senior Year)</p>
-                            <p>
-                                Relevant coursework includes web development, artificial intelligence,
-                                data structures, and software engineering.
-                            </p>
-                        </article>
+            <div class="justify-self-center md:justify-self-end">
+              <img
+                src="images/profile.jpeg"
+                alt="Naime Duru Kula portrait"
+                class="w-[260px] h-[350px] sm:w-[300px] sm:h-[420px] lg:w-[360px] lg:h-[500px] object-cover rounded-[28px] shadow-sm"
+              />
+            </div>
+          </div>
+        </div>
+        <p class="pb-5 text-center text-xs sm:text-sm font-medium text-[#161317] animate-bounce">↓ Scroll for more</p>
+      </section>
 
-                        <article>
-                            <h3>High School Diploma</h3>
-                            <p><b>İzmir Atatürk High School</b></p>
-                            <p>Graduated in 2017</p>
-                        </article>
-                    </td>
-                </tr>
-            </table>
-        </section>
+      <section class="bg-[#f0ede5] px-4 py-12 sm:px-8 lg:px-14">
+        <div class="max-w-6xl mx-auto space-y-5">
+          <article class="rounded-2xl p-5 sm:p-6">
+            <h3 class="text-2xl sm:text-3xl font-extrabold">About Me</h3>
+            <div class="mt-2 space-y-3 text-[#161317] leading-relaxed">
+              <p>I am a Computer Engineering student passionate about web development and artificial intelligence.</p>
+              <p>I enjoy creating clean, user-focused applications and continuously improving my technical and problem-solving skills.</p>
+              <p>I can communicate in English and I am currently actively learning Spanish.</p>
+              <p>I also focus on using AI tools efficiently and effectively in my workflow, and I continuously work on improving my ability to leverage AI in the right way.</p>
+              <p>
+                My current goal is to have a stable remote job that allows me to earn while also traveling the world.
+                If things go well, I would love to spend some time living in Southeast Asia and experiencing different cultures while continuing my professional growth.
+              </p>
+            </div>
+          </article>
 
+          <article class="rounded-2xl bg-[#FFFDF9] p-5 sm:p-6">
+            <h3 class="text-2xl sm:text-3xl font-extrabold">Education</h3>
+            <div class="mt-4 grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div class="rounded-xl bg-[#F8F1E6] p-4">
+                <p class="font-semibold">B.Sc. in Computer Engineering</p>
+                <p class="text-sm text-[#161317]"><b>Yaşar University</b></p>
+                <p class="text-sm text-[#161317]">2022 - Present (Senior Year)</p>
+                <p class="mt-2 text-sm text-[#161317]">
+                  Relevant coursework includes web development, artificial intelligence, data structures, and software engineering.
+                </p>
+              </div>
+              <div class="rounded-xl bg-[#F8F1E6] p-4">
+                <p class="font-semibold">High School Diploma</p>
+                <p class="text-sm text-[#161317]"><b>İzmir Atatürk High School</b></p>
+                <p class="text-sm text-[#161317]">Graduated in 2017</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="rounded-2xl bg-[#FFFDF9] p-5 sm:p-6">
+            <h3 class="text-2xl sm:text-3xl font-extrabold">Experience</h3>
+            <p class="mt-2 text-[#161317] leading-relaxed">
+              Frontend Developer Intern at Izmir Metropolitan Municipality. Worked on responsive web interfaces and UI improvements.
+            </p>
+          </article>
+
+          <article class="rounded-2xl bg-[#FFFDF9] p-5 sm:p-6">
+            <h3 class="text-2xl sm:text-3xl font-extrabold">Contact</h3>
+            <p class="mt-2 text-[#161317] break-all sm:break-normal">kuladuru35@gmail.com • linkedin.com/in/naime-duru-kula-b007162bb</p>
+          </article>
+
+          <footer class="rounded-2xl bg-[#161317] px-5 py-4 text-sm font-medium text-[#f0ede5]">
+            © 2026 Naime Duru Kula • Computer Engineering Student
+          </footer>
+        </div>
+      </section>
     </main>
-    <footer>
-        <hr>
-        <hr>
-        <table width="100%">
-            <tr>
-                <td>
-                    <p><small>© 2026 Naime Duru Kula</small></p>
-                    <p><small>Computer Engineering Student</small></p>
-                    <p><small>İzmir, Türkiye</small></p>
-                </td>
-            </tr>
-        </table>
-    </footer>
-
-</body>
+  </body>
 </html>
