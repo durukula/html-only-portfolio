@@ -5,78 +5,77 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact with me</title>
     <link rel="icon" type="image/png" href="images/favicon.png">
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <header>
-        <table>
-            <tr>
-                <td>
-                    <h2>Naime Duru Kula</h2>
-                </td>
-            </tr>
-        </table>
-    </header>
-    <!-- NAV -->
-    <nav>
-        <table>
-            <tr>
-                <td>
-                    <b>
-                        <a href="home.html">Home</a>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        <a href="skills.html">Skills</a>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        <a href="projects.html">Projects</a>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        <a href="experience.html">Experience</a>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        <a href="contact.html">Contact</a>
-                    </b>
-                </td>
-            </tr>
-        </table>
-    </nav>
-
-    <hr>
-
-    <main>
-        <section>
-            <h2>Contact With Me</h2>
-            <p>You can reach me out via email or connect with me on LinkedIn.</p>
-            <ul>
-                <li>
-                    <b>Email:</b>
-                    <a href="mailto:kuladuru35@gmail.com">kuladuru35@gmail.com</a>
-                </li>
-                <li>
-                    <b>University Email:</b>
-                    <a href="mailto:22070001013@stu.yasar.edu.tr">22070001013@stu.yasar.edu.tr</a>
-                </li>
-                <li>
-                    <b>LinkedIn:</b>
-                    <a href="https://www.linkedin.com/in/naime-duru-kula-b007162bb/" target="_blank">Naime Duru Kula</a>
-                </li>
-                <li>
-                    <b>GitHub:</b>
-                    <a href="https://github.com/durukula" target="_blank">durukula</a>
-                </li>
+<body class="bg-[#f0ede5] text-[#161317] min-h-screen flex flex-col overflow-x-hidden">
+    <header class="px-4 py-6 mb-8 sm:mb-12">
+        <nav>
+            <ul class="flex flex-wrap items-center justify-center gap-6 text-[13px] font-semibold">
+              <li><a href="home.html" class="transition-colors hover:text-[#49110B] hover:underline underline-offset-4">Home</a></li>
+              <li><a href="skills.html" class="transition-colors hover:text-[#49110B] hover:underline underline-offset-4">Skills</a></li>
+              <li><a href="projects.html" class="transition-colors hover:text-[#49110B] hover:underline underline-offset-4">Projects</a></li>
+              <li><a href="experience.html" class="transition-colors hover:text-[#49110B] hover:underline underline-offset-4">Experience</a></li>
+              <li><a href="contact.html" class="transition-colors hover:text-[#49110B] hover:underline underline-offset-4">Contact</a></li>
             </ul>
+          </nav>
+    </header>
+
+    <main class="mx-auto max-w-6xl px-4 pb-12 sm:px-8 lg:px-14 flex-1">
+        <!-- Ana içerik bölümü: Contact -->
+        <section class="space-y-8">
+            <h1 class="text-center text-[40px] sm:text-[56px] font-extrabold tracking-tight leading-none mb-8 sm:mb-12">Contact With Me</h1>
+
+            <article class="rounded-2xl bg-[#FFFDF9] p-6 shadow-sm">
+                <p>You can reach me out via email or connect with me on LinkedIn.</p>
+                <div class="mt-5 grid grid-cols-1 gap-4 sm:grid-cols-2">
+                    <div class="rounded-xl border border-black/10 bg-white p-4">
+                        <p class="text-sm font-semibold">Email:</p>
+                        <a class="mt-1 inline-block text-[#B02A1B] font-bold hover:underline" href="mailto:kuladuru35@gmail.com">kuladuru35@gmail.com</a>
+                    </div>
+                    <div class="rounded-xl border border-black/10 bg-white p-4">
+                        <p class="text-sm font-semibold">University Email:</p>
+                        <a class="mt-1 inline-block text-[#B02A1B] font-bold hover:underline" href="mailto:22070001013@stu.yasar.edu.tr">22070001013@stu.yasar.edu.tr</a>
+                    </div>
+                    <div class="rounded-xl border border-black/10 bg-white p-4">
+                        <p class="text-sm font-semibold">LinkedIn:</p>
+                        <a class="mt-1 inline-block text-[#B02A1B] font-bold hover:underline" href="https://www.linkedin.com/in/naime-duru-kula-b007162bb/" target="_blank">Naime Duru Kula</a>
+                    </div>
+                    <div class="rounded-xl border border-black/10 bg-white p-4">
+                        <p class="text-sm font-semibold">GitHub:</p>
+                        <a class="mt-1 inline-block text-[#B02A1B] font-bold hover:underline" href="https://github.com/durukula" target="_blank">durukula</a>
+                    </div>
+                </div>
+            </article>
+            <div class="mt-10 w-full text-center">
+                <p class="font-[cursive] italic text-[#B02A1B] leading-none tracking-tight text-[14vw] sm:text-[12vw] md:text-[10vw]">lets build something together</p>
+            </div>
         </section>
     </main>
-
-    <footer>
-        <hr>
-        <hr>
-        <table width="100%">
-            <tr>
-                <td>
-                    <p><small>© 2026 Naime Duru Kula</small></p>
-                    <p><small>Computer Engineering Student</small></p>
-                    <p><small>İzmir, Türkiye</small></p>
-                </td>
-            </tr>
-        </table>
+    <footer class="rounded-2xl bg-[#161317] mx-4 sm:mx-8 lg:mx-14 mb-6 px-5 py-4 text-sm font-medium text-[#f0ede5]">
+        <div class="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+            <ul class="flex flex-wrap items-center gap-2 justify-center sm:justify-start">
+                <li>
+                    <a href="mailto:kuladuru35@gmail.com" class="inline-flex items-center gap-2 rounded-full border border-[#B02A1B] px-3 py-1 transition-all">
+                        <span class="font-semibold">Email</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/naime-duru-kula-b007162bb/" target="_blank" class="inline-flex items-center gap-2 rounded-full border border-[#B02A1B] px-3 py-1 transition-all">
+                        <span class="font-semibold">LinkedIn</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/durukula" target="_blank" class="inline-flex items-center gap-2 rounded-full border border-[#B02A1B] px-3 py-1 transition-all">
+                        <span class="font-semibold">GitHub</span>
+                    </a>
+                </li>
+            </ul>
+            <div class="text-center sm:text-right">
+                <p>© 2026 Naime Duru Kula</p>
+                <p>Computer Engineering Student</p>
+                <p>İzmir, Türkiye</p>
+            </div>
+        </div>
     </footer>
-
 </body>
 </html>
