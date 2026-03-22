@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-Do List</title>
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-[#f0ede5] text-[#161317] min-h-screen flex flex-col overflow-x-hidden">
+  <header class="px-4 py-6 mb-8 sm:mb-12">
+    <nav>
+      <ul class="flex flex-wrap items-center justify-center gap-6 text-[13px] font-semibold">
+        <li><a href="home.html" class="transition-colors hover:text-[#49110B] hover:underline underline-offset-4">Home</a></li>
+        <li><a href="skills.html" class="transition-colors hover:text-[#49110B] hover:underline underline-offset-4">Skills</a></li>
+        <li><a href="projects.html" class="transition-colors hover:text-[#49110B] hover:underline underline-offset-4">Projects</a></li>
+        <li><a href="todo.html" class="transition-colors hover:text-[#49110B] hover:underline underline-offset-4">To-Do List</a></li>
+        <li><a href="experience.html" class="transition-colors hover:text-[#49110B] hover:underline underline-offset-4">Experience</a></li>
+        <li><a href="contact.html" class="transition-colors hover:text-[#49110B] hover:underline underline-offset-4">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="mx-auto max-w-7xl px-4 pb-12 sm:px-8 lg:px-14 flex-1">
+    <section class="space-y-8">
+      <div class="space-y-3 text-center mb-8 sm:mb-12">
+        <h1 class="text-[40px] sm:text-[56px] font-extrabold tracking-tight leading-none">To-Do List</h1>
+        <p class="mx-auto max-w-xl text-sm sm:text-base font-semibold text-[#56483B]">Add, complete, edit, and organize your tasks in a clean and simple way.</p>
+      </div>
+
+      <article class="bg-[#f0ede5]">
+        <div class="space-y-8">
+          <div class="flex w-full flex-wrap items-end justify-between gap-4 border-b border-black/10 pb-2" role="tablist" aria-label="Task filters">
+            <button id="filterAll" type="button" role="tab" aria-selected="true" class="border-b-2 border-transparent pb-2 text-xs font-extrabold uppercase tracking-wide text-[#56483B] transition focus:outline-none hover:text-[#161317] aria-selected:border-[#161317] aria-selected:text-[#161317]">
+              All <span class="ml-1 font-black tabular-nums" id="counterTotal">0</span>
+            </button>
+            <button id="filterRemaining" type="button" role="tab" aria-selected="false" class="border-b-2 border-transparent pb-2 text-xs font-extrabold uppercase tracking-wide text-[#56483B] transition focus:outline-none hover:text-[#161317] aria-selected:border-[#161317] aria-selected:text-[#161317]">
+              Remaining <span class="ml-1 font-black tabular-nums" id="counterRemaining">0</span>
+            </button>
+            <button id="filterCompleted" type="button" role="tab" aria-selected="false" class="border-b-2 border-transparent pb-2 text-xs font-extrabold uppercase tracking-wide text-[#56483B] transition focus:outline-none hover:text-[#161317] aria-selected:border-[#161317] aria-selected:text-[#161317]">
+              Completed <span class="ml-1 font-black tabular-nums" id="counterCompleted">0</span>
+            </button>
+          </div>
+
+          <div class="space-y-8">
+            <div class="space-y-6">
+              <div class="space-y-3">
+                <label class="sr-only" for="todoInput">Add a new task</label>
+                <input id="todoInput" type="text" class="h-12 w-full rounded-2xl border border-black/10 bg-[#FFFDF9] px-4 text-sm font-semibold text-[#161317] outline-none placeholder:text-[#56483B]/70 shadow-sm focus:border-[#B02A1B] focus:ring-2 focus:ring-[#B02A1B]/25" placeholder="Add a new task..." />
+                <button id="addTodoButton" type="button" class="h-12 w-full rounded-2xl bg-[#B02A1B] px-5 text-sm font-extrabold uppercase tracking-wide text-[#E9DDCC] shadow-sm transition hover:opacity-95 focus:outline-none focus:ring-2 focus:ring-[#B02A1B]/40 active:opacity-90">Add Task</button>
+                <p id="inputError" class="hidden text-sm font-extrabold text-[#B02A1B]">Please enter a task.</p>
+              </div>
+
+              <label class="inline-flex items-center gap-2 text-xs font-extrabold uppercase tracking-wide text-[#161317]">
+                <input id="rememberTasks" type="checkbox" class="h-4 w-4 accent-[#B02A1B]" />
+                Remember after refresh
+              </label>
+            </div>
+
+            <div class="min-w-0">
+              <p id="emptyState" class="py-3 text-sm font-semibold text-[#56483B]">No tasks yet. Add your first task above.</p>
+              <ul id="todoList" class="divide-y divide-black/10"></ul>
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <footer class="rounded-2xl bg-[#161317] mx-4 sm:mx-8 lg:mx-14 mb-6 px-5 py-4 text-sm font-medium text-[#f0ede5]">
+    <div class="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+      <ul class="flex flex-wrap items-center gap-2 justify-center sm:justify-start">
+        <li><a href="mailto:kuladuru35@gmail.com" class="inline-flex items-center gap-2 rounded-full border border-[#B02A1B] px-3 py-1 transition-all"><span class="font-semibold">Email</span></a></li>
+        <li><a href="https://www.linkedin.com/in/naime-duru-kula-b007162bb/" target="_blank" class="inline-flex items-center gap-2 rounded-full border border-[#B02A1B] px-3 py-1 transition-all"><span class="font-semibold">LinkedIn</span></a></li>
+        <li><a href="https://github.com/durukula" target="_blank" class="inline-flex items-center gap-2 rounded-full border border-[#B02A1B] px-3 py-1 transition-all"><span class="font-semibold">GitHub</span></a></li>
+      </ul>
+      <div class="text-center sm:text-right">
+        <p>© 2026 Naime Duru Kula • Computer Engineering Student</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="todo.js" defer></script>
+</body>
+</html>
